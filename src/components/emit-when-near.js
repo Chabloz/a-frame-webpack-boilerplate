@@ -4,9 +4,10 @@ AFRAME.registerComponent('emit-when-near', {
     distance: {type: 'number', default: 1},
     event: {type: 'string', default: 'click'},
     eventFar: {type: 'string', default: 'unclick'},
+    throttle: {type: 'number', default: 100},
   },
   init: function () {
-    this.tick = AFRAME.utils.throttleTick(this.checkDist, 200, this);
+    this.tick = AFRAME.utils.throttleTick(this.checkDist, this.data.throttle, this);
     this.emiting = false;
   },
   checkDist: function () {
