@@ -15,7 +15,7 @@ AFRAME.registerComponent('emit-when-near', {
     let targetPos = new THREE.Vector3(0, 0, 0);
     this.el.object3D.getWorldPosition(myPos);
     this.data.target.object3D.getWorldPosition(targetPos);
-    let distanceTo = myPos.distanceTo(targetPos);
+    const distanceTo = myPos.distanceTo(targetPos);
     if (distanceTo <= this.data.distance) {
       if (this.emiting) return;
       this.emiting = true;
