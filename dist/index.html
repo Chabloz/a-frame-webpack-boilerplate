@@ -12,7 +12,7 @@
       <a-box
         position="0 0 -4"
         material="color: red"
-        emit-when-near="event: change-color; eventFar: reset-color; distance: 2"
+        emit-when-near="event: change-color; eventFar: reset-color; distance: 3"
         on-event-set__near="event: change-color; attribute: material.color; value: blue;"
         on-event-set__far="event: reset-color; attribute: material.color; value: red;"
       ></a-box>
@@ -20,11 +20,11 @@
       <a-entity
         id="camera-rig"
         wasd-controls
+        look-controls="pointerLockEnabled: true"
         position="0 0 0">
           <a-entity
             id="head"
-            camera
-            look-controls="pointerLockEnabled: true"
+            camera            
             position="0 1.6 0"
           ></a-entity>
       </a-entity>
