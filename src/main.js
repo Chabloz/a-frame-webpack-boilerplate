@@ -1,2 +1,5 @@
-import './components/emit-when-near';
-import './components/on-event-set';
+function importAll(r) {
+  r.keys().forEach(r);
+}
+
+importAll(require.context('./components', false, /\.js$/));
