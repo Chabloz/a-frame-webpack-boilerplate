@@ -13,6 +13,10 @@ const config = {
       path.resolve('./src'),
       path.resolve('./node_modules')
     ]
+  },
+  externals: {
+    // Stubs out `import ... from 'three'` so it returns `import ... from window.THREE` effectively using THREE global variable that is defined by AFRAME.
+    three: 'THREE'
   }
 };
 
