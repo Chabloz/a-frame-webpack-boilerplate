@@ -10,7 +10,7 @@ git clone https://github.com/Chabloz/a-frame-webpack-boilerplate.git .
 ```
 ### Install
 ```sh
-npm install
+npm ci
 ```
 ### Dev
 ```sh
