@@ -8,7 +8,6 @@ AFRAME.registerComponent('emit-when-near', {
   },
   init: function () {
     this.tick = AFRAME.utils.throttleTick(this.checkDist, this.data.throttle, this);
-    console.log('this 2');
     this.emiting = false;
   },
   checkDist: function () {
