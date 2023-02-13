@@ -1,5 +1,5 @@
 # a-frame-webpack-boilerplate
-Minimalist boilerplate for A-Frame 1.3.0 and Webpack 5
+Minimalist boilerplate for A-Frame 1.4.0 and Webpack 5
 
 Create a folder for your project and :
 
