@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>VR</title>
-    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
     <script src="bundle.js"></script>
   </head>
   <body>
@@ -11,7 +11,7 @@
 
       <a-box
         position="0 0 -4"
-        material="color: red"
+        material="color: tomato"
         emit-when-near="event: change-color; eventFar: reset-color; distance: 3"
         on-event-set__near="event: change-color; attribute: material.color; value: blue;"
         on-event-set__far="event: reset-color; attribute: material.color; value: red;"
