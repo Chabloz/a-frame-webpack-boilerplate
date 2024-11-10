@@ -20,3 +20,5 @@ npm run dev
 ```sh
 npm run build
 ```
+
+Then serve the file in the dist folder with a server of your choice (VS Code Live Server, http-server, etc.)
